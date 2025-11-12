@@ -25,7 +25,6 @@ class DataLoader:
         
         return data
     
-    
 class Table:
     def __init__(self, name, table):
         self.name = name
