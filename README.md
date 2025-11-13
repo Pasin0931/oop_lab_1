@@ -1,17 +1,38 @@
-What is this lab is all about ?
-- Practice implementing procedural-style code into an OOP-style code, by declare and use classes, which is not done in procedural-style code.
-- Practice using lambda function integration inside the code.
+# Lab: Object-Oriented Data Processing with CSV Files
 
-Project Structure
-├── README.md               # Current file
-├── Cities.csv              # The dataset
-├── data_processing.py      # The analysis code
+## Overview
+This lab focuses on turning **procedural-style code** into a clean **object-oriented design** using Python classes.  
+You will practice:
+- Organizing logic with classes and methods.  
+- Using **lambda functions** for filtering and aggregating data.
 
-Design overview
-- DataLoader: Loads CSV files into dictionary lists
-- Table: Wraps data for query operations
-- filter(): Returns new Table with rows matching condition
-- aggregate(): Applies operations like average/max on columns
-- Workflow: Load -> Filter -> Aggregate with lambda functions
+---
 
-You can run the code by typing "python data_processing.py" inside the terminal below, or click on the run button on top right coner of the screen.
+## Project Structure
+
+README.md — Project documentation  
+Cities.csv — Dataset of cities  
+Countries.csv — Dataset of countries  
+data_processing.py — Main script for data processing and analysis  
+
+---
+
+## Design Summary
+
+**DataLoader** – Loads CSV files into lists of dictionaries.  
+**DB** – Simple in-memory database to store and find tables.  
+**Table** – Represents a dataset with methods to:
+- `filter(condition)` – returns rows that meet a condition.  
+- `aggregate(func, column)` – applies operations like average, min, or max.  
+- `join(other, key)` – merges two tables using a shared key.  
+
+---
+
+## How to Run
+
+Run the program in your terminal:
+
+```bash
+python data_processing.py
+or click the Run ▶️ button in your editor.
+```
